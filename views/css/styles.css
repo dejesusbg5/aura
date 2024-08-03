@@ -7,5 +7,19 @@
 @import url("https://cdn.jsdelivr.net/gh/dejesusbg5/md3/styles/styles.css");
 
 :root {
-    --font-name: "Excon-Medium";
+  --font-name: "Excon-Medium";
+}
+
+.md3-topbar__leading img {
+  width: 2.25rem;
+  height: auto;
+  margin: 0 1rem;
+}
+
+#balance-card {
+    text-align: end;
+}
+
+#balance-card span.md3-card__headline {
+    font: var(--font-display-l);
 }
