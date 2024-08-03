@@ -1,0 +1,11 @@
+/* fontface */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..700,0..1,0");
+@import url("excon.css");
+
+/* material design 3 */
+@import url("https://cdn.jsdelivr.net/gh/dejesusbg5/md3/styles/components.css");
+@import url("https://cdn.jsdelivr.net/gh/dejesusbg5/md3/styles/styles.css");
+
+:root {
+    font-family: Excon;
+}
