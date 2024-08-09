@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do - aura</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav class="md3-nav">
+      <button class="md3-btn md3-nav__btn md3-btn--fab md3-btn--fab--tertiary">
+        <span class="md3-btn--fab__icon material-symbols-rounded">add</span>
+      </button>
+
+      <input
+        class="md3-nav__item-radio"
+        type="radio"
+        name="activity"
+        id="to-home"
+        onclick="window.location = './index.html'" />
+      <a class="md3-nav__item" href="./index.html" tabindex="-1">
+        <label class="md3-nav__item__label ripple" for="to-home">
+          <i class="material-symbols-rounded md3-nav__item__icon">home</i>
+        </label>
+      </a>
+      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-task" checked />
+      <a class="md3-nav__item" href="#" tabindex="-1">
+        <label class="md3-nav__item__label ripple" for="to-task">
+          <i class="material-symbols-rounded md3-nav__item__icon">emoji_events</i>
+        </label>
+      </a>
+      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-cart" />
+      <a class="md3-nav__item" href="#" tabindex="-1">
+        <label class="md3-nav__item__label ripple" for="to-cart">
+          <i class="material-symbols-rounded md3-nav__item__icon">payments</i>
+        </label>
+      </a>
+      <input class="md3-nav__item-radio" type="radio" name="activity" id="to-history" />
+      <a class="md3-nav__item" href="#" tabindex="-1">
+        <label class="md3-nav__item__label ripple" for="to-history">
+          <i class="material-symbols-rounded md3-nav__item__icon">history</i>
+        </label>
+      </a>
+    </nav>
+
+    <header class="md3-topbar">
+      <section class="md3-topbar__leading">
+        <img src="./img/logo.png" alt="Logo" />
+        <span class="md3-topbar__title">aura </span>
+      </section>
+
+      <section class="md3-topbar__trailing">
+        <button class="md3-btn md3-btn--icon md3-topbar__btn" onclick="toggleDarkMode()">
+          <span class="material-symbols-rounded md3-btn__icon"> dark_mode </span>
+        </button>
+        <button class="md3-btn md3-btn--icon md3-topbar__btn">
+          <span class="material-symbols-rounded md3-btn__icon"> settings </span>
+        </button>
+      </section>
+    </header>
+
+    <main>
+      <h1>to do</h1>
+      <div class="md3-card md3-card--filled" id="balance-card">
+        <span class="md3-card__headline">+2000</span>
+        <span class="md3-card__subhead">points available</span>
+      </div>
+
+      <h4>tasks</h4>
+      <div class="md3-card md3-card--outlined">
+        <span class="md3-card__headline">comp sci lecture</span>
+        <span class="md3-card__subhead">+50 points</span>
+      </div>
+      <div class="md3-card md3-card--outlined">
+        <span class="md3-card__headline">go to sleep before 9 pm</span>
+        <span class="md3-card__subhead">+30 points</span>
+      </div>
+    </main>
+    <!-- Material Design -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/monet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3/script/material-you.js"></script>
+    <!-- ACME -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

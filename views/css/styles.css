@@ -8,6 +8,7 @@
 
 :root {
   --font-name: "Excon-Medium";
+  user-select: none;
 }
 
 .md3-topbar__leading img {
@@ -25,7 +26,6 @@
 }
 
 /* styling for nav items */
-
 nav .md3-nav__item-radio:not(:checked) + .md3-nav__item .md3-nav__item__icon {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48 !important;
 }
@@ -42,4 +42,12 @@ body.light .md3-nav__item-radio:checked + .md3-nav__item .md3-nav__item__icon {
 
 body.dark .md3-nav__item-radio:checked + .md3-nav__item .md3-nav__item__icon {
   background: var(--color-primary-container) !important;
+}
+
+@media screen and (min-width: 512px) and (min-height: 512px) {
+  .md3-nav__item-radio:checked + .md3-nav__item .md3-nav__item__icon {
+    height: 3.5rem;
+    border-radius: 99%;
+    padding-top: 0.75rem;
+  }
 }
